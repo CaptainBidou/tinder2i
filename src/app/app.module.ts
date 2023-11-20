@@ -7,10 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { ProfilComponent } from './profil/profil.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +23,10 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     NgbModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

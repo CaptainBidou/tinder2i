@@ -1,0 +1,53 @@
+<mat-card id="card">
+
+    <!-- put this image in background like tinder  -->
+    <img src="assets/img/tinder2i2.png" alt="tinder2i" width="50" height="50">
+
+    <!-- <div class="profil__photo">
+
+        <img src="assets/img/lukas.jpg" alt="photo profil" >
+    </div> -->
+
+    <mat-card-header>
+        <mat-card-title>
+            <h1>Prénom Nom</h1>
+        </mat-card-title>
+    </mat-card-header>
+    <!-- button to developp the other points -->
+    <mat-card-subtitle>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+            (click)="this.development=!this.development">
+            <mat-icon class="yes">{{this.development?'expand_less':'expand_more'}}</mat-icon></button>
+    </mat-card-subtitle>
+
+    <mat-card-content *ngIf="this.development">
+        
+        <div class="profil">
+
+            <div class="profil__info">
+
+                <p>Age</p>
+                <p>Genre</p>
+                <p>Localisation</p>
+                <p>Profession</p>
+                <p>Description</p>
+            </div>
+        </div>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions class="bottom-card">
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"
+            (click)="rotate(-90)">
+            <mat-icon class="nop">close</mat-icon></button>
+
+        <span class="example-spacer"></span>
+
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
+            (click)="rotate(90)">
+            <mat-icon class="yes">favorite</mat-icon></button>
+        <span class="example-spacer"></span>
+
+
+    </mat-card-actions>
+</mat-card>

@@ -1,4 +1,38 @@
-<mat-card>
-  <mat-card-title color="primary"> Tinder 2i</mat-card-title>
-  <mat-card-content></mat-card-content>
-</mat-card>
+<!-- make this header like linkedin header-->
+<!-- <p>
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon color="primary">menu</mat-icon>
+    </button>
+    <span>Tinder2i</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon color="primary">favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon color="primary">share</mat-icon>
+    </button>
+  </mat-toolbar>
+</p> -->
+
+<p>
+  <mat-toolbar>
+    <!-- margin left  -->
+    <span class="example-spacer"></span>
+    <img src="assets/img/tinder2i2.png" alt="tinder2i" width="50" height="50">
+    <span class="title">Tinder2i</span>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon color="primary">favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon color="primary">share</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+
+
+  <!-- margin left for pub -->
+<div class="contentMain">
+  <router-outlet></router-outlet>
+</div>
